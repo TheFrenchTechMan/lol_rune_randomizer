@@ -148,8 +148,6 @@ SHARDS = [
 ]
 
 
-
-
 PRIMARY_PATH = RUNES.pop(rnd.randint(0, 4))
 SECONDARY_PATH = RUNES.pop(rnd.randint(0, 3))
 
@@ -162,6 +160,6 @@ SECONDARY_MINOR_RUNES = [runes[rnd.randint(0, 2)] for runes in [SECONDARY_PATH.g
 SMR = SECONDARY_MINOR_RUNES #For readability
 
 SELECTED_SHARDS = [shards[rnd.randint(0, 2)] for shards in SHARDS]
-S = SELECTED_SHARDS
+S = SELECTED_SHARDS #For readability
 
 print(f'https://www.mobafire.com/league-of-legends/rune-page-planner#&rune={PRIMARY_PATH.get("name")}:{MAJOR_RUNE}:{PMR[0]}:{PMR[1]}:{PMR[2]}::{SECONDARY_PATH.get("name")}:{SMR[0]}:{SMR[1]}:::Shards:{S[0]}:{S[1]}:{S[2]}')
